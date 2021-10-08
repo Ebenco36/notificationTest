@@ -14,6 +14,7 @@
 <p>Set the .env config</p>
 <p>Run php artisan migrate</p>
 <p>Run php artisan serve --port=9000</p>
+
 ```
 
 http://127.0.0.1:9000/subscribe/topic
