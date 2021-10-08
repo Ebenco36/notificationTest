@@ -10,12 +10,12 @@
 
 ## How to Use
 
-Create your database
-Set the .env config
-Run php artisan migrate
-Run php artisan serve --port=9000
+<p>Create your database</p>
+<p>Set the .env config</p>
+<p>Run php artisan migrate</p>
+<p>Run php artisan serve --port=9000</p>
 
-We can see update made by webhook server here
+<p>We can see update made by webhook server here</p>
 
 ## About Laravel
 
