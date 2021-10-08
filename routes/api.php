@@ -14,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\HomeController;
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-
+/**
+ * Needed to do this here to avoid csrf token issue.
+ * However, this could be avoided by adding endpoint 
+ * to csrf middleware
+ */
 Route::post('/subscribe/{topic}', HomeController::class.'@Subscribe');

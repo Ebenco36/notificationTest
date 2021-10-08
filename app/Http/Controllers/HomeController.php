@@ -14,18 +14,34 @@ class HomeController extends Controller
         $this->client   = $client;
     }
 
+    /**
+     * Test 1 Endpoint
+     */
 
     public function Webhook(Request $request){
-        Log::debug($request->all());
+        /**
+         * Testing if subscribers get their responses as expected
+         */
         WebhookResponse::create($request->only('topic', 'data'));   
     }
 
+
+    /**
+     * Test 2 Endpoint
+     */
     public function Webhook2(Request $request){
-        Log::debug($request->all());
+        /**
+         * Testing if subscribers get their responses as expected
+         */
         WebhookResponse::create($request->only('topic', 'data'));      
     }
 
+    /**
+     * Allow users/subscribers to subscribe to 
+     * topic using API
+     */
     public function Subscribe(Request $request, $title){
+
         $request->validate([
             'url' => 'required|url',
         ]);
