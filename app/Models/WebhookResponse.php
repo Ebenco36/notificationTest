@@ -14,6 +14,10 @@ class WebhookResponse extends Model
         'topic'
     ];
 
+    public function setDataAttribute($value){
+        $this->attributes['data'] = json_encode($value);
+    }
+
     
     
 }

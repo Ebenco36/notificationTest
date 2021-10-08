@@ -17,5 +17,5 @@ Route::get('/test1', function () {
     return view('welcome');
 });
 
-Route::get('/test1', HomeController::class.'@Webhook');
-Route::get('/test2', HomeController::class.'@Webhook2');
+Route::post('/test1', HomeController::class.'@Webhook');
+Route::post('/test2', HomeController::class.'@Webhook2');
