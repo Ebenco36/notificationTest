@@ -19,3 +19,4 @@ Route::get('/test1', function () {
 
 Route::post('/test1', HomeController::class.'@Webhook');
 Route::post('/test2', HomeController::class.'@Webhook2');
+
